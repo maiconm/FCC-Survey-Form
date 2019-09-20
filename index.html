@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- 
+      Hello Camper!
+      For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+      - The freeCodeCamp Team 
+    -->
+    <main id="main">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Survey form example</p>
+      <form id="survey-form">
+        <label
+          id="email-label"
+          for="email"
+        >
+          * Email
+        </label>
+        <input
+          placeholder="email@example.com"
+          required
+          id="email"
+          type="email"
+        />
+        <label
+          id="name-label"
+          for="name"
+        >
+          * Name
+        </label>
+        <input
+          placeholder="Ex.: John Papa"
+          required
+          id="name"
+        />
+        <label
+          id="number-label"
+          for="number"
+        >
+          * Your age
+        </label>
+        <input
+          placeholder="Ex.: 33"
+          type="number"
+          required
+          id="number"
+          min="0"
+          max="99"
+        />
+        <label
+          id="country-label"
+          for="age"
+        >
+          Country
+        </label>
+        <select id="dropdown">
+          <option value="Brazil">Brazil</option>
+          <option value="Canada">Canada</option>
+        </select>
+      </form>
+    </main>
+  </body>
+</html>
