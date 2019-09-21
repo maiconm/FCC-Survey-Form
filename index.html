@@ -1,116 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style.css"
+      media="screen"
+    />
     <title>Survey Form</title>
   </head>
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <!-- 
-      Hello Camper!
-      For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-      - The freeCodeCamp Team 
-    -->
     <main id="main">
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <!-- 
+        Hello Camper!
+        For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+        - The freeCodeCamp Team 
+      -->
       <h1 id="title">Survey Form</h1>
-      <p id="description">Survey form example</p>
+      <p id="description">How could I improve this form?</p>
       <form id="survey-form">
-        <label
-          id="email-label"
-          for="email"
-        >
-          * Email
-        </label>
-        <input
-          placeholder="email@example.com"
-          required
-          id="email"
-          type="email"
-        />
-        <label
-          id="name-label"
-          for="name"
-        >
-          * Name
-        </label>
-        <input
-          placeholder="Ex.: John Papa"
-          required
-          id="name"
-        />
-        <label
-          id="number-label"
-          for="number"
-        >
-          * Your age
-        </label>
-        <input
-          placeholder="Ex.: 33"
-          type="number"
-          required
-          id="number"
-          min="0"
-          max="99"
-        />
-        <label
-          id="country-label"
-          for="age"
-        >
-          Country
-        </label>
-        <select id="dropdown">
-          <option value="Brazil">
-            Brazil
-          </option>
-          <option value="Canada">
-            Canada
-          </option>
-        </select>
-        <div>
-          <input
-            value="1"
-            name="radio-group"
-            type="radio"
-          />
-          <input
-            value="2"
-            name="radio-group"
-            type="radio"
-          />
-          <input
-            value="3"
-            name="radio-group"
-            type="radio"
-          />
-        </div>
-        <div>
-          <input
-            value="2"
-            type="checkbox"
-            id="scales"
-            name="scales"
-            checked
+        <div class="grid-align">
+
+          <label
+            id="email-label"
+            for="email"
           >
-          <label for="scales">
-            Scales
+            * Email
           </label>
-        </div>
-        <div>
           <input
-            value="1"
-            type="checkbox"
-            id="horns"
-            name="horns"
+            placeholder="email@example.com"
+            required
+            id="email"
+            type="email"
+          />
+          <label
+            id="name-label"
+            for="name"
           >
-          <label for="horns">
-            Horns
+            * Name
           </label>
+          <input
+            placeholder="Ex.: John Papa"
+            required
+            id="name"
+          />
+          <label
+            id="number-label"
+            for="number"
+          >
+            * Your age
+          </label>
+          <input
+            placeholder="Ex.: 33"
+            type="number"
+            required
+            id="number"
+            min="0"
+            max="99"
+          />
+          <label
+            id="country-label"
+            for="age"
+          >
+            Country
+          </label>
+          <select id="dropdown">
+            <option value="none">
+              Choose one
+            </option>
+            <option value="Brazil">
+              Brazil
+            </option>
+            <option value="Canada">
+              Canada
+            </option>
+          </select>
+          <label
+            id="radio-label"
+            for="options"
+          >
+            Genre
+          </label>
+          <div id="options">
+            <label for="female">
+              Female
+            </label>
+            <input
+              checked
+              id="female"
+              value="female"
+              name="radio-group"
+              type="radio"
+            />
+              <label for="male">
+                Male
+              </label>
+            <input
+              value="male"
+              name="radio-group"
+              type="radio"
+            />
+          </div>
+          <label for="checkbox">
+            What aspect could it be improved?
+          </label>
+          <div class="checkboxes">
+            <div id="checkbox">
+              <input
+                value="colors"
+                type="checkbox"
+                id="colors"
+                name="colors"
+              >
+              <label for="colors">
+                Colors
+              </label>
+            </div>
+            <div>
+              <input
+                value="indentation"
+                type="checkbox"
+                id="indentation"
+                name="indentation"
+              >
+              <label for="indentation">
+                Indentation
+              </label>
+            </div>
+            <div>
+              <input
+                value="font"
+                type="checkbox"
+                id="font"
+                name="font"
+              >
+              <label for="font">
+                Font
+              </label>
+            </div>
+            <div>
+              <input
+                value="options"
+                type="checkbox"
+                id="options"
+                name="options"
+              >
+              <label for="options">
+                Options
+              </label>
+            </div>
+          </div>
+          <label for="suggestion">
+            Leave another suggestion
+          </label>
+          <textarea
+            id="suggestion"
+            name="suggestion"
+            rows="5"
+            cols="33"
+          ></textarea>
         </div>
-        <textarea
-          id="story"
-          name="story"
-          rows="5"
-          cols="33"
-        ></textarea>
         <button
           id="submit"
           type="submit"
