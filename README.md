@@ -1,7 +1,7 @@
 # FCC-Survey-Form
 Survey Form page project for FreeCodeCamp
 
-live demo 👉 https://codepen.io/maiconm/pen/JjPwbjv
+live demo 👉 https://codepen.io/maiconm/pen/oNvJMeX
 
 **Author:** Maicon Andraski
 You can use this project as reference to build your own.
